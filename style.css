@@ -1,0 +1,55 @@
+/* reset code starts  */
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+/* reset code ends  */
+
+
+
+h1{
+    text-align: center;
+    font-size: 3 rem;
+}
+
+/* posts starts here */
+.posts{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post{
+    width: 22%;
+    margin: 0.4rem;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    padding: 1rem;
+    transition: all 0.4s;
+}
+
+.post:hover{
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+
+}
+/* posts ends here */
+
+
+
+/* responsive strtas here */
+@media screen and  (max-width : 992px) {
+    .post{
+        width: 47%;
+        background: aqua;
+    }
+}
+
+@media screen and  (max-width : 600px) {
+    .post{
+        width: 100%;
+        background-color: red;
+    }
+}
+/* responsive ends here */
